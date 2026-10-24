@@ -6,6 +6,8 @@ full, row-by-row status.
 
 ## Unreleased
 
+- PDF and SVG export: an outline set to scale with its object is written as wide as the drawing window draws it, its width times the object's scale. It was written at its own width, so a 10 mm outline on an object scaled to a quarter came out 10 mm wide instead of 2.5 mm, in .cdr files and in drawings scaled here alike.
+
 - Property bars: the up and down arrows (and the mouse wheel) of the rotation angle, scale %, arc angles, dimension text size and line width, corner radius and Transform toolbar fields now apply at every click. After clicking into the box, only the first arrow click worked.
 
 - A right click while dragging (move, scale, rotate, skew, and mirroring with Ctrl and a side handle) now leaves the original and makes the copy whichever button you release first. Releasing the left button first, or both at once, used to count as a click: on empty canvas it emptied the selection and nothing was copied. The scale, rotate and skew pointers now also show the copy's plus (#528).
